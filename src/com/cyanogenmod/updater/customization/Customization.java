@@ -11,7 +11,7 @@ package com.cyanogenmod.updater.customization;
 
 public class Customization {
     // The string from build.prop before the version
-    public static final String RO_MOD_START_STRING = "CyanogenMod";
+    public static final String RO_MOD_START_STRING = "OpenSensation2";
     // Minimum supported version (so the user has to install Google Apps and so before)
     public static final String MIN_SUPPORTED_VERSION_STRING = RO_MOD_START_STRING + "";
     // MUST be the first package name
@@ -23,5 +23,5 @@ public class Customization {
     // Current ROM build date
     public static final String BUILD_DATE = "ro.build.date.utc";
     // Name of the current ROM
-    public static final String SYS_PROP_MOD_VERSION = "ro.cm.version";
+    public static final String SYS_PROP_MOD_VERSION = "ro.os.version";
 }

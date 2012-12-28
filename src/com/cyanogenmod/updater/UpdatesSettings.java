@@ -611,7 +611,7 @@ public class UpdatesSettings extends PreferenceActivity implements OnPreferenceC
             int style;
 
             // Convert the systemRom name to the associated filename
-            String installedZip = "cm-" + mSystemRom.toString() + ".zip";
+            String installedZip = mSystemRom.toString() + ".zip";
 
             // Add the server based updates
             // Since these will almost always be newer, they should appear at the top
