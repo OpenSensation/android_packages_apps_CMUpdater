@@ -12,6 +12,8 @@ package com.cyanogenmod.updater.customTypes;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.cyanogenmod.updater.customization.Customization;
+
 import java.io.Serializable;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -95,6 +97,7 @@ public class UpdateInfo implements Parcelable, Serializable {
         } else {
             version = "";
         }
+        version = version.replace(Customization.RO_MOD_START_STRING,"");
         version = version.replaceAll(".*?([0-9.]+?)-.+","$1");
     }
 

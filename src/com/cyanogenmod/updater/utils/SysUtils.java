@@ -26,6 +26,7 @@ public class SysUtils {
      */
     public static String getModVersion() {
         String modVer = getSystemProperty(Customization.SYS_PROP_MOD_VERSION);
+        modVer = modVer.replace(Customization.RO_MOD_START_STRING,"");
         modVer = modVer.replaceAll("([0-9.]+?)-.+","$1");
         return (modVer == null || modVer.length() == 0 ? "Unknown" : modVer);
     }
